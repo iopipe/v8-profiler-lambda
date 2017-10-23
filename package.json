@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "binary": {
     "module_name": "profiler",
-    "module_path": "./build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
+    "module_path": "../v8-profiler/build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
     "remote_path": "./{module_name}/v{version}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://node-inspector.s3.amazonaws.com/"
@@ -30,6 +30,6 @@
   },
   "scripts": {
     "preinstall": "node -e 'process.exit(0)'",
-    "install": "node-pre-gyp install --target=4.8.0 --target_arch=x64 --target_platform=linux --fallback-to-build; mkdir -p ../v8-profiler/build/profiler/v5.7.0/node-v46-linux-x64; cp build/profiler/v5.7.0/node-v46-linux-x64/profiler.node ../v8-profiler/build/profiler/v5.7.0/node-v46-linux-x64/profiler.node; node-pre-gyp install --target=6.10.0 --target_arch=x64 --target_platform=linux --fallback-to-build; mkdir -p ../v8-profiler/build/profiler/v5.7.0/node-v48-linux-x64; cp build/profiler/v5.7.0/node-v48-linux-x64/profiler.node ../v8-profiler/build/profiler/v5.7.0/node-v48-linux-x64/profiler.node;"
+    "install": "node-pre-gyp install --target=4.8.0 --target_arch=x64 --target_platform=linux --fallback-to-build; node-pre-gyp install --target=6.10.0 --target_arch=x64 --target_platform=linux --fallback-to-build;"
   }
 }
