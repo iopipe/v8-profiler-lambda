@@ -1,6 +1,6 @@
 {
   "name": "v8-profiler-lambda",
-  "version": "5.7.0",
+  "version": "5.7.0-1",
   "description": "node bindings for the v8 profiler compiled for AWS Lambda",
   "homepage": "http://github.com/iopipe/v8-profiler-lambda",
   "author": "IOpipe Team",
@@ -11,8 +11,8 @@
   "license": "Apache-2.0",
   "binary": {
     "module_name": "profiler",
-    "module_path": "../v8-profiler/build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
-    "remote_path": "./{module_name}/v{version}/",
+    "module_path": "../v8-profiler/build/{module_name}/v{major}.{minor}.{patch}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{major}.{minor}.{patch}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://node-inspector.s3.amazonaws.com/"
   },
