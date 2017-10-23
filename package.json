@@ -1,0 +1,35 @@
+{
+  "name": "v8-profiler-lambda",
+  "version": "5.7.0",
+  "description": "node bindings for the v8 profiler compiled for AWS Lambda",
+  "homepage": "http://github.com/iopipe/v8-profiler-lambda",
+  "author": "IOpipe Team",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iopipe/v8-profiler-lambda.git"
+  },
+  "license": "Apache-2.0",
+  "binary": {
+    "module_name": "profiler",
+    "module_path": "./build/{module_name}/v{version}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{version}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://node-inspector.s3.amazonaws.com/"
+  },
+  "keywords": [
+    "profiler",
+    "inspector"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "node-pre-gyp": "^0.6.34",
+    "v8-profiler": "=5.7.0"
+  },
+  "scripts": {
+    "preinstall": "node -e 'process.exit(0)'",
+    "install": "node-pre-gyp install --target=4.8.0 --target_arch=x64 --target_platform=linux --fallback-to-build; mkdir -p node_modules/v8-profiler/build/profiler/v5.7.0/node-v46-linux-x64; cp build/profiler/v5.7.0/node-v46-linux-x64/profiler.node node_modules/v8-profiler/build/profiler/v5.7.0/node-v46-linux-x64/profiler.node; node-pre-gyp install --target=6.10.0 --target_arch=x64 --target_platform=linux --fallback-to-build; mkdir -p node_modules/v8-profiler/build/profiler/v5.7.0/node-v48-linux-x64; cp build/profiler/v5.7.0/node-v48-linux-x64/profiler.node node_modules/v8-profiler/build/profiler/v5.7.0/node-v48-linux-x64/profiler.node;"
+  }
+}
