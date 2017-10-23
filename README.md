@@ -9,6 +9,9 @@ This module forces the installation of the binaries necessary for running
 v8-profiler on Lambda, in addition to the binaries matching the machine
 running the node package manager.
 
+*WARNING* - This module does _not_ provide a fully-integrated profiling experience for Lambda.
+This is an advanced-use, low-level library for building profiling tools.
+
 ## Installation
 
 ### NPM
