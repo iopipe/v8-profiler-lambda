@@ -2,7 +2,8 @@
 
 ## Description
 
-Wrapper library for v8-profiler with AWS Lambda compatible binaries.
+Wrapper library for [v8-profiler](https://github.com/node-inspector/v8-profiler)
+with AWS Lambda compatible binaries.
 
 This module forces the installation of the binaries necessary for running
 v8-profiler on Lambda, in addition to the binaries matching the machine
@@ -24,7 +25,7 @@ Require module:
 
 `var v8profiler = require('v8-profiler-lambda')`
 
-Refer to the documentation for [v8profiler](https://github.com/node-inspector/v8-profiler).
+Refer to the documentation for [v8-profiler](https://github.com/node-inspector/v8-profiler).
 
 ## Authors
 
