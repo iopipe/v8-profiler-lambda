@@ -1,6 +1,6 @@
 {
   "name": "v8-profiler-lambda",
-  "version": "5.7.0-1",
+  "version": "5.7.1",
   "description": "node bindings for the v8 profiler compiled for AWS Lambda",
   "homepage": "http://github.com/iopipe/v8-profiler-lambda",
   "author": "IOpipe Team",
@@ -31,6 +31,7 @@
   },
   "scripts": {
     "preinstall": "node -e 'process.exit(0)'",
-    "install": "node-pre-gyp install --target=4.8.0 --target_arch=x64 --target_platform=linux --fallback-to-build; node-pre-gyp install --target=6.10.0 --target_arch=x64 --target_platform=linux --fallback-to-build;"
+    "install": "node-pre-gyp install --target=4.8.0 --target_arch=x64 --target_platform=linux --fallback-to-build; node-pre-gyp install --target=6.10.0 --target_arch=x64 --target_platform=linux --fallback-to-build;",
+    "test": "echo \"no tests specified\" && exit 0"
   }
 }
