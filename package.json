@@ -25,6 +25,7 @@
   },
   "main": "index.js",
   "dependencies": {
+    "node-gyp": "^3.6.2",
     "node-pre-gyp": "^0.6.34",
     "v8-profiler": "=5.7.0"
   },
