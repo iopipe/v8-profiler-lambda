@@ -1,6 +1,6 @@
 {
   "name": "v8-profiler-lambda",
-  "version": "5.7.1",
+  "version": "5.7.0-1",
   "description": "node bindings for the v8 profiler compiled for AWS Lambda",
   "homepage": "http://github.com/iopipe/v8-profiler-lambda",
   "author": "IOpipe Team",
