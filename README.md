@@ -12,7 +12,7 @@ running the node package manager.
 *WARNING* - This module does _not_ provide a fully-integrated profiling experience for Lambda.
 This is an advanced-use, low-level library for building profiling tools.  For the full 
 experience, check out the 
-[IOpipe AWS Lambda profiling plugin](https://github.com/iopipe/iopipe-plugin-profiler)
+[IOpipe AWS Lambda profiling plugin](https://github.com/iopipe/iopipe-plugin-profiler).
 
 ## Installation
 
