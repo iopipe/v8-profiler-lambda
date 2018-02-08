@@ -1,5 +1,7 @@
 # v8-profiler-lambda
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iopipe/v8-profiler-lambda.svg)](https://greenkeeper.io/)
+
 ## Description
 
 Wrapper library for [v8-profiler](https://github.com/node-inspector/v8-profiler)
